@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/*css 初始化 */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, input, select, textarea, div, table, td, th, tr, dt, dd, dl {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+nav {
+    display: block;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+em, i {
+    font-style: normal;
+}
+
+strong, b {
+    font-weight: normal;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    -webkit-touch-callout: none;
+}
+
+input, select {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 100%;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    line-height: 150%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    hide-focus: expression(this.hideFocus=true);
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+dl, dt, dd, div {
+    outline: none;
+}
+
+.none {
+    display: none;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.visb {
+    visibility: visible;
+}
+
+.pa {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.fontkt {
+    font-family: "kaiti";
+}
+
+.loading {
+    padding: 5% 0 100%;
+    text-align: center;
+    background: #fbfcfb;
+}
+
+/*京东色*/
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,694 @@
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    min-width: 1000px;
+    background: #000;
+    font: 14px/1.5 arial, "\5FAE\8F6F\96C5\9ED1";
+    color: #fff;
+    text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+body > object p {
+    display: none;
+}
+
+.plvd .played {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#bgm {
+    display: none;
+}
+
+/*版心部分*/
+.container {
+    width: 1000px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
+/*版心部分*/
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #403931 url(../images/bg-1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    transition: all .6s ease-out 0s;
+}
+
+/*header部分 第一部分*/
+.logo {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    width: 145px;
+    height: 51px;
+    background-position: 0 -343px;
+}
+.logo a{
+    display: block;
+    text-indent: -9999px;
+}
+.logo, .header h1, .msctrl {
+    background-image: url(../images/f-spr.png);
+    background-repeat: no-repeat;
+}
+
+.logo, .header h1, .msctrl {
+    background-image: url(../images/f-spr.png);
+    background-repeat: no-repeat;
+}
+
+.header h1 {
+    left: 50%;
+    top: 50%;
+    margin: -290px 0 0 -341px;
+    width: 682px;
+    height: 333px;
+    background-position: 0 0;
+    text-indent: -9999px;
+    display: none;
+}
+
+.parts {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/*第一部分结束*/
+/*scene 第二部分开始*/
+.scene {
+    background-image: url(../images/bg-2.jpg);
+}
+
+/*图片部分*/
+.scene .pic {
+    margin-top: 20%;
+    overflow: hidden;
+}
+.p4{
+    display: block;
+    margin-top: -30px;
+    text-align: center;
+    font: 80px kaiti;
+    color: #fff;
+}
+.pic ul {
+    width: 1916px;
+    position: relative;
+
+}
+
+.pic li {
+    float: left;
+}
+
+.pic {
+    width: 479px;
+    height: 478px;
+}
+
+.pic .arrLeft, .pic .arrRight {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.pic .arrLeft {
+    left: 0px;
+    top: 218px;
+    background: url("../images/icon.png") no-repeat;
+
+}
+
+.pic .arrRight {
+    left: 441px;
+    top: 218px;
+    background: url("../images/icon.png") no-repeat -123px 0;
+}
+
+/*右侧图标部分*/
+
+.btns .cj,.tq{
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    border: 1px solid #fff;
+    transform : rotate(45deg);
+}
+.btns em{
+    display: block;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    transform : rotate(-45deg);
+    font-size: 30px;
+}
+.btns .cj{
+     position: absolute;
+     right: 45%;
+     bottom: 40%;
+ }
+.btns .tq{
+    position: absolute;
+    right: 35%;
+    bottom: 20%;
+}
+.btns .splay{
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
+}
+.splay .v4{
+    position: absolute;
+    top: -400px;
+    left: -490px;
+}
+.article {
+    /*position: absolute;*/
+    /*font-family: kaiti;*/
+    /*right: 20%;*/
+    /*top:25%;*/
+
+}
+/*第二部分结束*/
+/*第三部分开始*/
+.figure {
+    background-color: #e7e7e7;
+    background-image: url(../images/bg-3.jpg);
+}
+
+
+
+
+/*文字部分*/
+
+.article h2 {
+    margin-top: 10px;
+    font: 80px kaiti;
+    color: #2fc3a3;
+    margin-top: 10px;
+}
+
+.article .l {
+    display: block;
+    position: relative;
+    padding: 0 0 0 60px;
+    color: #5f5f5f;
+    height: 40px;
+    font-family: "kaiti";
+}
+
+.faces .p2 {
+    font: 30px kaiti;
+    color: black;
+}
+
+.facelists {
+    width: 540px;
+
+}
+
+.facelists li {
+    display: block;
+    float: left;
+    width: 116px;
+    height: 116px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.facelists li:hover img {
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    margin-left: -10px;
+    margin-top: -14px;
+}
+
+.f-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.f-right img {
+    width: 490px;
+}
+
+/*第三部分结束*/
+/*第四部分开始*/
+.plot {
+    background-color: #000;
+    background-image: url(../images/bg-4.jpg);
+}
+
+.btns1, .btns2 {
+    width: 150px;
+    height: 150px;
+    background-image: url("../images/play.png");
+}
+
+video {
+    display: none;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 200px;
+}
+ .btns2 video{
+     position: relative;
+     left: -464px;
+     top: -258px;
+ }
+
+.plot-c {
+    margin-top: 100px;
+}
+
+.operaleft .pa2 {
+    font: 80px kaiti;
+    color: #2fc3a3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*第四部分结束*/
+/*第五部分开始*/
+.fighting {
+
+    background-image: url(../images/bg-5.jpg);
+}
+.FBs .cur p {
+    display: block;
+}
+.fighting img{
+    width: 520px;
+    height: 288px;
+}
+.btns3 video{
+    position: relative;
+    top: -320px;
+    left: 28%;
+}
+/*第五部分结束*/
+/*第六部分开始*/
+.united {
+    background-color: #f3f4f8;
+    background-image: url(../images/bg-6.jpg);
+
+}
+.words{
+    width: 400px;
+}
+.united .p4{
+    margin-top: 10px;
+    color: #2fc3a3;
+}
+.button{
+    margin-top: 100px;
+    width: 350px;
+    /*background: url("../images/icon.png") -100px -800px;*/
+
+}
+.button1{
+    margin-top: 130px;
+}
+.button span{
+    display: inline-block;
+    border:1px solid #ccc;
+    width: 100px;
+    height: 100px;
+    
+}
+.button1 span{
+    display: inline-block;
+    border:1px solid #ccc;
+    width: 100px;
+    height: 100px;
+
+}
+.button1 span:hover,.button span:hover{
+    background-color: #2fc3a3;
+    color: #fff;
+}
+.button1 em:hover,.button em:hover{
+    color: #fff;
+}
+.button em{
+    display: block;
+    width: 100px;
+    height: 100px;
+    transform : rotate(-45deg);
+    color: #2fc3a3;
+    text-align: center;
+    line-height: 100px;
+    font-size:18px ;
+    font-family: kaiti;
+}
+.button1 em{
+    display: block;
+    width: 100px;
+    height: 100px;
+    transform : rotate(-45deg);
+    color: #2fc3a3;
+    text-align: center;
+    line-height: 100px;
+    font-size:18px ;
+    font-family: kaiti;
+}
+.l1,.l2,.l3{
+    width: 340px;
+    height: 102px;
+    transform : rotate(45deg);
+    margin-bottom: 47px;
+}
+.images {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 639px;
+    height: 707px;
+}
+.images1 {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 639px;
+    height: 707px;
+}
+/*第六部分结束*/
+/*第七张部分开始*/
+.group {
+    background-color: #08090e;
+    background-image: url(../images/bg-7.jpg);
+}
+
+.group h2 {
+    height: 76px;
+    width: 906px;
+    margin: -350px 0 0 -453px;
+    background-position: 50% -658px;
+}
+
+.group .bosses {
+    width: 1064px;
+    height: 515px;
+    margin: -197px 0 0 -522px;
+}
+
+.bosses .boss:hover, .bosses .bn {
+    background-image: url(../images/utd.png);
+    background-repeat: no-repeat;
+}
+
+.bosses .boss {
+    position: relative;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+
+.quwy {
+    width: 274px;
+}
+
+.tangqf {
+    width: 266px;
+}
+
+.yezq {
+    width: 254px;
+}
+
+.liyt {
+    width: 270px;
+}
+
+.quwy:hover {
+    background-position: 0 0;
+}
+
+.tangqf:hover {
+    background-position: -274px 0;
+}
+
+.yezq:hover {
+    background-position: -540px 0;
+}
+
+.liyt:hover {
+    background-position: -794px 0;
+}
+
+.bosses .bn {
+    position: absolute;
+    bottom: -144px;
+    opacity: 0;
+    left: 50%;
+    width: 144px;
+    height: 144px;
+    margin: 0 0 0 -72px;
+    text-indent: -9999px;
+    -webkit-transition: all 0.4s 0s;
+}
+
+.quwy .bn {
+    background-position: -46px -556px;
+}
+
+.tangqf .bn {
+    background-position: -315px -556px;
+}
+
+.yezq .bn {
+    background-position: -593px -556px;
+}
+
+.liyt .bn {
+    background-position: -862px -556px;
+}
+
+.bosses .boss:hover .bn {
+    bottom: 0;
+    opacity: 1;
+}
+
+/*第七部分结束*/
+/*第八部分开始*/
+.profession {
+    background-color: #070707;
+    background-image: url(../images/bg-8.jpg);
+}
+#content {
+    margin: 0 auto;
+    width: 960px;
+    /*background: url(../images/) no-repeat left top;*/
+    height: 627px;
+    color: #2fc3a3;
+    font-family: kaiti;
+
+}
+
+#content .tip1, #content .tip2, #content .tip3, #content .tip4, #content .tip5, #content .tip6, #content .tip7, #content .tip8 {
+    position: absolute;
+    width: 227px;
+    left: 200px;
+    top: 100px;
+}
+
+#content .tip1 .tip_h {
+    background: url(../images/tip1_h.gif) no-repeat left top;
+}
+
+#content .tip1 .tip_h, #content .tip2 .tip_h, #content .tip3 .tip_h, #content .tip4 .tip_h, #content .tip5 .tip_h, #content .tip6 .tip_h, #content .tip7 .tip_h, #content .tip8 .tip_h {
+    width: 227px;
+    padding-top: 45px;
+    height: 23px;
+    text-align: left;
+    cursor: move;
+}
+
+#content .tip1 .tip_c {
+    background: url(../images/tip1_c.gif) repeat-y;
+}
+
+#content .tip1 .tip_c, #content .tip2 .tip_c, #content .tip3 .tip_c, #content .tip4 .tip_c, #content .tip5 .tip_c, #content .tip6 .tip_c, #content .tip7 .tip_c, #content .tip8 .tip_c {
+    width: 200px;
+    padding-left: 12px;
+    padding-right: 15px;
+    min-height: 40px;
+    text-align: left;
+    line-height: 20px;
+    max-height: 160px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+#content .tip1 .tip_f {
+    background: url(../images/tip1_f.gif) no-repeat left top;
+}
+
+#content .tip1 .tip_f, #content .tip2 .tip_f, #content .tip3 .tip_f, #content .tip4 .tip_f, #content .tip5 .tip_f, #content .tip6 .tip_f, #content .tip7 .tip_f, #content .tip8 .tip_f {
+    width: 227px;
+    height: 53px;
+    padding-top: 20px;
+}
+
+#content .close, #content .close2 {
+    float: left;
+    font-size: 12px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.clr {
+    clear: both;
+    overflow: auto;
+    display: block;
+    height: 0px;
+}
+
+#content .icon {
+    float: left;
+    width: 35px;
+    padding-left: 15px;
+    height: 35px;
+    text-align: center;
+}
+
+#content .name {
+    float: right;
+    padding-right: 15px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 35px;
+    color: #2fc3a3;
+}
+
+#content .num {
+    float: left;
+    padding-left: 7px;
+    width: 195px;
+}
+
+#content #cc {
+    left: 0px;
+}
+
+#cc textarea {
+    resize: none;
+    width: 190px;
+}
+
+#cc input {
+    width: 100px;
+}
+/*第八部分结束*/
+/*主导航部分开始*/
+.nav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 125px 0 0 -50%;
+    width: 100%;
+    font-size: 16px;
+    z-index: 100;
+    text-align: center;
+    transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.nav .navs {
+    display: inline-block;
+    width: 106px;
+    height: 106px;
+    line-height: 106px;
+    margin: 0 15px;
+    border: 1px solid #414141;
+    border-radius: 50%;
+    color: #414141;
+    text-align: center;
+}
+
+.nav .navs:hover {
+    border-color: #2fc3a3;
+    color: #2fc3a3;
+}
+/*主导航部分结束*/
+/*子导航部分开始*/
+.flt {
+    position: fixed;
+    top: 540px;
+    left: 26.76%;
+    margin: 0;
+    width: auto;
+}
+
+.flt .navs {
+    float: left;
+    width: 72px;
+    height: 72px;
+    line-height: 72px;
+    margin: 0 5px;
+    font-size: 16px;
+    color: black;
+    border-color: black;
+}
+
+.blk .navs {
+    color: #000;
+    border-color: #9c9c9c;
+}
+
+.nav .cur {
+    background-color: #2fc3a3;
+    border-color: #2fc3a3;
+    color: #fff;
+}
+/*子导航部分结束*/
+/*滚动鼠标部分开始*/
+.msctrl {
+    transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    margin: 0 0 0 -65px;
+    width: 85px;
+    height: 193px;
+    background-position: 0 100%;
+    text-indent: -9999px;
+    display: none;
+}
+/*滚动鼠标部分结束*/

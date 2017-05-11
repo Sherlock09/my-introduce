@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .clock {
+            width: 600px;
+            height: 600px;
+            margin: 100px auto;
+            background: url(images/clock.jpg) no-repeat;
+            position: relative;
+        }
+
+        .clock div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(images/hour.png) no-repeat center center;
+        }
+
+        #m {
+            background-image: url(images/minute.png);
+        }
+
+        #s {
+            background-image: url(images/second.png);
+        }
+    </style>
+</head>
+<body>
+<div class="clock">
+    <div id="h"></div>
+    <div id="m"></div>
+    <div id="s"></div>
+</div>
+</body>
+</html>
+<script>
+    //transform: rotate(30deg);
+    var hh = document.getElementById("h");  // 时针
+    var mm = document.getElementById("m");  // 分针
+    var ss = document.getElementById("s");  // 秒针
+    setInterval(clock, 100);
+    function clock() {
+        var d = new Date();
+        //秒针要细腻要从毫秒开始计算
+        var ms = d.getMilliseconds();//毫秒
+        //一秒是1000毫秒 把过去的毫秒的度数也加上
+        var s = d.getSeconds() + ms / 1000;//计算有多少个6°
+        ss.style.transform = "rotate(" + s * 6 + "deg)";
+        //一分是60秒 把过去的秒的度数也加上
+        var m = d.getMinutes() + s / 60;//计算有多少个6°
+        mm.style.transform = "rotate(" + m * 6 + "deg)";
+        //一小时是60分 如果过去30分钟了 时针应该在两个整点的中间
+        //所以要加上分钟的度数 60分钟是一小时 过去30分钟时针应该转 30/60*一小时的度数
+        var h = d.getHours() % 12 + m / 60;//计算有多少个30°
+        hh.style.transform = "rotate(" + h * 30 + "deg)";
+    }
+</script>
